@@ -21,7 +21,7 @@ app.get("/", async (req, res) => {
 });
 
 //create a route
-app.post("/", async (req, res) => {
+app.post("/chat", async (req, res) => {
   const { messages } = req.body;
 
   if (!Array.isArray(messages) || !messages.length) {
